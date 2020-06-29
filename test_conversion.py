@@ -1,5 +1,5 @@
 from optparse import OptionParser
-from audio_converter import transcription_tools.Audio_Converter
+from transcription_tools.audio_converter import Audio_Converter
 
 if __name__ == '__main__':
     parser = OptionParser()

@@ -1,7 +1,7 @@
-import extract_audio
-import denoise
-import speech_to_text
-import audio_conversion_pipe
+import transcription_tools.extract_audio as extract_audio
+import transcription_tools.denoise as denoise
+import transcription_tools.speech_to_text as speech_to_text
+import transcription_tools.audio_conversion_pipe as audio_conversion_pipe
 
 class Audio_Converter:
     def __init__(self, vfp = None, afp = None, tfp = None, dargs = None, v = False):

@@ -52,9 +52,7 @@ if __name__ == '__main__':
         parser.error('Incorrect number of arguments')
 
     if options.verbose:
-        print('arguments verified')
-        print('beginning audio processing process')
-        print('initializing converter')
+        print('beginning audio processing, initializing and running converter...')
 
     audio_conv = Audio_Converter(
         vfp = options.video_file_path,
@@ -63,8 +61,6 @@ if __name__ == '__main__':
         dargs = options.denoiser_arguments,
         v = options.verbose
     )
-
-    if options.verbose: print('converting audio file')
     
     output = audio_conv.run()
 else: print('This script is meant to be run from the terminal only.')
